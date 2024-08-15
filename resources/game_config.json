@@ -12,10 +12,12 @@
 		"chance_for_neutral": 10,
 		"chance_of_special_group": 8,
 		"chance_romantic_not_mate": 15,
+		"influence_condition_events": 20,
 		"comment":[
 			"chance_for_neutral - how high the chance is to make the interaction of the relationship to a 'neutral' instead of negative or positive",
 			"chance_of_special_group - 1/chance often when a group event is happening not all cats are considered, only a special group, which is defined in group_types.json",
-			"chance_romantic_not_mate - the base chance of an romantic interaction with another cat, when a cat has a mate"
+			"chance_romantic_not_mate - the base chance of an romantic interaction with another cat, when a cat has a mate",
+			"influence_condition_events - how much an event with a condition can influence the relationship"
 		]
 	},
 	"mates":{
@@ -254,8 +256,11 @@
 			"due to how it's written in the save files. So don't try to 'fix' it."
 		]
 	},
+	"event_generation": {
+		"debug_ensure_event_id": null
+	},
 	"death_related": {
-		"leader_death_chance": 125,
+		"leader_death_chance": 50,
 		"classic_death_chance": 500,
 		"expanded_death_chance": 350,
 		"cruel season_death_chance": 300,
@@ -293,6 +298,11 @@
 			"mediator apprentice": 25
 		},
 		"min_graduating_age": 10
+	},
+	"outside_ex":{
+		"base_adolescent_timeskip_ex":[[2, 10],[4, 5]],
+		"base_adult_timeskip_ex":[[4, 12],[6, 7]],
+		"base_senior_timeskip_ex":[[3, 9],[3, 4]]
 	},
     "focus":{
         "duration": 3,
